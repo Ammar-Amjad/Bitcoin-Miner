@@ -1,11 +1,11 @@
 # Bitcoin-Miner
 
-Task:
+# Task:
 
 To make a Bitcoin miner able to mine 0’s based on the input that user enters, Outputting the required stats
 and messages.
 
-Components:
+# Components:
 
 1- Server: That supervises all the worker nodes.
 
@@ -14,7 +14,7 @@ Components:
 3- Remote workers: Added to server’s nodes as they become available. Remote workers communicate their
 availability to the server.
 
-Instructions:
+# Instructions:
 
 1- Start server terminal with erl -sname server.
 
@@ -37,21 +37,21 @@ finds the desired hash.
 are on page 3. We will additionally need to setup the connection for remote workers and an example is
 shown on page 4.
 
-Input:
+# Input:
 n - desired number of zeros - input from terminal
 
-Output:
+# Output:
 1- String used to find hash
 2- The hash
 ---------------------------------------------------------------------------------------------------------
-Commands to connect from remote PC:
+# Commands to connect from remote PC:
 
 Run these commands based on either windows or linux machines, Terminal must be run under administrator
 modes on both machines:
 
 On both machine start terminal in administrator mode.
 
-For Linux:
+# For Linux:
 
 Step 1:
 
@@ -75,7 +75,7 @@ net_kernel:connect_node(’freebsd_node1@10.20.23.44’)
 
 ------------------
 
-For Windows:
+# For Windows:
 
 Step 1:
 
