@@ -43,4 +43,59 @@ n - desired number of zeros - input from terminal
 Output:
 1- String used to find hash
 2- The hash
+---------------------------------------------------------------------------------------------------------
+Commands to connect from remote PC:
+
+Run these commands based on either windows or linux machines, Terminal must be run under administrator
+modes on both machines:
+
+On both machine start terminal in administrator mode.
+
+For Linux:
+
+Step 1:
+
+Linux machine 1:
+
+erl -name freebsd_node1@10.20.23.44 -setcookie ’mycookie’
+
+Linux machine 2:
+
+erl -name freebsd_node2@10.20.23.37 -setcookie ’mycookie’
+
+Step 2:
+
+Linux machine 1:
+
+net_kernel:connect_node(’freebsd_node2@10.20.23.37’)
+
+Linux machine 2:
+
+net_kernel:connect_node(’freebsd_node1@10.20.23.44’)
+
+------------------
+
+For Windows:
+
+Step 1:
+
+Windows machine 1:
+
+werl -name windows_node1@10.20.23.44 -setcookie ’mycookie’
+
+Windows machine 2:
+
+werl -name windows_node2@10.20.23.37 -setcookie ’mycookie’
+
+Step 2:
+
+Windows machine 1:
+
+net_adm:ping(’windows_node2@10.20.23.37’)
+
+Windows machine 2:
+
+net_adm:ping(’windows_node1@10.20.23.44’)
+
+nodes( ).
 
