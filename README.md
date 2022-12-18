@@ -2,7 +2,7 @@
 
 # Task:
 
-To make a Bitcoin miner able to mine 0’s based on the input that user enters, Outputting the required stats
+To make a Erlang based Bitcoin miner able to mine 0’s based on the input that user enters, Outputting the required stats
 and messages.
 
 # Components:
